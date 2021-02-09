@@ -1,0 +1,208 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Explorin</title>
+    <link rel="icon" href="#" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body style="background: #FFF8F7;">
+    <nav class=" navbar navbar-expand-lg navbar-light bg-white" style="margin-top:5px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+            <img src="{% static 'img/logo+text.png' %}" width="150" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="/about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="/projects">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="/contacts">CONTACTS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container my-4">
+        <div class="row">
+            <img src="{% static 'img/Soni_profile.jpg' %}" class="rounded-circle" alt="Profile  Image"
+                style="height: 250px; width:250px; margin:auto; margin-top:10px;">
+        </div>
+        <div class="row my-3">
+            <h1 style="margin: auto;">About</h1>
+        </div>
+        <hr class="my-3">
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne1">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
+                        aria-controls="collapseOne1">
+                        <div class="row mb-0" style="color:#FC6F32;">
+                            <div class="col-md-11">
+                                <b style="font-size: 25px; color:#FC6F32;">Introduction</b>
+                            </div>
+                            <div class="col-md-1">
+                                <i class="fas fa-2x fa-angle-down rotate-icon"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                        My name is Soni Mishra. I am currently in my 4th year of B.Tech(CSE). I have always found myself having a keen interest
+                        in software development and want to pursue my career in that as well.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingTwo2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                        aria-expanded="false" aria-controls="collapseTwo2">
+                        <div class="row mb-0" style="color:#FC6F32;">
+                            <div class="col-md-11">
+                                <b style="font-size: 25px; color:#FC6F32;">Education</b>
+                            </div>
+                            <div class="col-md-1">
+                                <i class="fas fa-2x fa-angle-down rotate-icon"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                        <table class="table table-bordered border border-dark">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Board/University Name</th>
+                                    <th>Marks/CGPA</th>
+                                </tr>
+                            <tbody>
+                                <tr>
+                                    <td>X</td>
+                                    <td>ICSE</td>
+                                    <td>93.2%</td>
+                                </tr>
+                                <tr>
+                                    <td>XII</td>
+                                    <td>ISC</td>
+                                    <td>91%</td>
+                                </tr>
+                                <tr>
+                                    <td>B.Tech</td>
+                                    <td>Galgotias University</td>
+                                    <td>8.15</td>
+                                </tr>
+                            </tbody>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingThree3">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                        aria-expanded="false" aria-controls="collapseThree3">
+                        <div class="row mb-0" style="color:#FC6F32;">
+                            <div class="col-md-11">
+                                <b style="font-size: 25px; color:#FC6F32;">Reason to join Explorin</b>
+                            </div>
+                            <div class="col-md-1">
+                                <i class="fas fa-2x fa-angle-down rotate-icon"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                        When it comes to picking a career, software development has always been the option for me without any second thoughts.
+                        But with that clarity was the confusion of choosing the right path to pursue it. The main reason for me to join Explorin 
+                        was to get a better idea of SD and to get a guidance on how to move ahead on the path efficiently.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingFour4">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
+                        aria-expanded="false" aria-controls="collapseFour4">
+                        <div class="row mb-0" style="color:#FC6F32;">
+                            <div class="col-md-11">
+                                <b style="font-size: 25px; color:#FC6F32;">Journey till now</b>
+                            </div>
+                            <div class="col-md-1">
+                                <i class="fas fa-2x fa-angle-down rotate-icon"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                        The entire journey of Explorin has been full of knowledge, ample resources and some really interesting tasks. The journey 
+                        gave me a gist of what software development actually is. The sessions with the industry experts guided thoroughly on how to 
+                        prepare and crack the interviews to get placed as a software developer and that has helped me a lot.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingFive5">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5"
+                        aria-expanded="false" aria-controls="collapseFive5">
+                        <div class="row mb-0" style="color:#FC6F32;">
+                            <div class="col-md-11">
+                                <b style="font-size: 25px;">Technologies learnt</b>
+                            </div>
+                            <div class="col-md-1">
+                                <i class="fas fa-2x fa-angle-down rotate-icon"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                        Frontend - HTML, CSS, Jquery basics<br>
+                        Backend - SQL, Django
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

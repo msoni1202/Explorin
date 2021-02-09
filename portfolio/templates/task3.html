@@ -1,0 +1,137 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Box</title>
+    <style>
+        .container
+        {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+        }
+        .container > *
+        {
+            margin: 2px;
+            flex: 1 100%
+        }
+        .head
+        {
+            background-color: cornflowerblue;
+            height: 50px;
+            color: white;
+        }
+        .foot
+        {
+            background-color: tomato;
+            height: 50px;
+            color: white;
+        }
+        .hero
+        {
+            background-color: #d389f5;
+            height: 150px;
+            color: white;
+            margin-bottom: 3px;
+            margin-right: 3px;
+        }
+        .main
+        {
+            background-color: #f2c446;
+            height: 250px;
+            color: white;
+            margin-left: 3px;
+            margin-bottom: 3px;
+        }
+        .sidebar
+        {
+            background-color: #88ed72;
+            height: 200px;
+            color: white;
+            margin-top: 3px;
+            margin-right: 3px;
+        }
+        .extra
+        {
+            background-color: #323331;
+            height: 100px;
+            color: white;
+            margin-left: 3px;
+            margin-top: 3px;
+        }
+        .image
+        {
+            background-color: #54a885;
+            height: 80px;
+            color: white;
+            flex:2;
+            margin-right: 3px;
+        }
+        .post
+        {
+            background-color: #f1b9da;
+            height: 80px;
+            color: white;
+            flex:1;
+            margin-left: 3px;
+        }
+        .a
+        {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .b
+        {
+            display: flex;
+            flex-direction: column;
+            flex:2;
+        }
+        .c
+        {
+            display: flex;
+            flex: 1 100%;
+        }
+        .d
+        {
+            display: flex;
+        }
+    </style>
+<body style="width: 50%; margin-left: 25%;">
+    <a class="navbar-brand" href="/projects"><h1>Go Back</h1></a>
+    <div class="container">
+        <div class="head">
+            <h1>Header</h1>
+        </div>
+        <div class="c">
+            <div class="a">
+                <div class="hero">
+                    <h1>Hero</h1>
+                </div>
+                <div class="sidebar">
+                <h1>Sidebar</h1>
+                </div>
+            </div>
+            <div class="b">
+                <div class="main">
+                    <h1>Main Content</h1>
+                </div>
+                <div class="extra">
+                    <h1>Extra content</h1>
+                </div>
+            </div>
+        </div>
+        <div class="d">
+            <div class="image">
+                <h1>Related Images</h1>
+            </div>
+            <div class="post">
+                <h1>Related Posts</h1>
+            </div>
+        </div>
+        <div class="foot">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>

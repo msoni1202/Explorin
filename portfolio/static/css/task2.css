@@ -1,0 +1,47 @@
+body
+{
+    background: blanchedalmond;
+}.navbar-default
+{
+    background-color:#6294bf;
+}
+.navbar-default .navbar-nav>li>a
+{
+    color: black;
+}
+.navbar-default .navbar-brand
+{
+    color: white;
+}
+.nav-tabs
+{
+    background-color: #6fd2f2;
+}
+.container ul
+{
+    padding-left: 20%;
+    font-size: 20px;
+}
+.home
+{
+    margin-top: 20px;
+}
+th
+{
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.form
+{
+    background-color: #bde3f0;
+    text-align: center;
+    margin-top: 5px;
+}
+.foot
+{
+    background-color: #6294bf;
+    margin-top: 1%;
+    text-align: center;
+    color: white;
+}
